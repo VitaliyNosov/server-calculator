@@ -1,0 +1,139 @@
+body 
+    padding: 0px
+    margin: 0px
+
+.form-wrapper
+    max-width: 800px
+    margin: 0 auto
+
+.header-block
+    width: 100%
+    min-height: 50px
+    text-align: center
+    padding: 2px
+    color: #fff
+    background-color: #169FE6
+
+.section-form-body
+    min-height: 300px
+    padding: 20px
+    margin: 20px
+    background-color: #ffff 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
+    border-radius: 5px
+ 
+
+.select-body 
+    width: 100%
+    display: flex
+    justify-content: center
+    margin: 20px 0px 20px 0px
+
+select
+    width: 80% 
+    height: 30px
+    padding: 5px
+    border-radius: 5px
+    border: 1px solid #E7E7E7
+
+.country 
+    min-height: 30px
+    padding: 0px 5px 0px 5px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-align: center
+    background-color: #169FE6
+    color: #fff
+    margin-top: 30px
+
+// Табы
+
+.tabs-wrapper
+  max-width: 100%
+  overflow: hidden
+  input
+    &:checked 
+    &[id="tab-1"]:checked ~ .content .tab-1, 
+    &[id="tab-2"]:checked ~ .content .tab-2, 
+    &[id="tab-3"]:checked ~ .content .tab-3, 
+    &[id="tab-4"]:checked ~ .content .tab-4
+      display: block
+  .content
+    clear: both
+  article
+    width: 100%
+    padding: 20px
+    background-color: #fff
+    display: none
+    min-height: 50px
+
+// Табы
+
+.total-amount-block 
+    width: 100%
+    height: 40px
+    margin-top: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 22px
+    color: #169FE6
+
+.button-block 
+    width: 100%
+    min-height: 50px
+    margin-top: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    button 
+        border: none
+        width: 180px
+        min-height: 40px
+        padding: 15px 10px 15px 10px
+        margin: 10px 20px 10px 20px
+        color: #fff
+        background-color: #169FE6
+        border: 1px solid #fff
+        &:hover 
+            background-color: #fff
+            color: #169FE6
+            border: 1px solid #169FE6
+            cursor: pointer
+
+
+// Европа блоки для интерактива
+            
+#europe-header 
+    // border: 1px solid red
+
+.servers-block 
+    // border: 2px solid #34B06D
+    // display: none
+
+.form-price 
+    // border: 2px solid #F4F304
+    display: none
+
+.form-support-system
+    // border: 2px solid #FF00AE
+    display: none
+
+.form-software-about 
+    // border: 2px solid #3AE2CE
+    display: none
+
+.total-amount
+    // border: 2px solid #7437BF
+    display: none
+
+.europe-content 
+    border: 2px solid red
+    display: none
+
+.ukraine-content
+    border: 2px solid green
+    display: none
