@@ -3,6 +3,10 @@ body {
   margin: 0px;
 }
 
+.calculator-wrapper {
+  min-height: 110px;
+}
+
 .form-wrapper {
   max-width: 800px;
   margin: 0 auto;
