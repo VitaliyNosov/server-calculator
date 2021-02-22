@@ -6,6 +6,7 @@ body {
 .form-wrapper {
   max-width: 800px;
   margin: 0 auto;
+  display: none;
 }
 
 .header-block {
@@ -132,8 +133,9 @@ select {
 
 .button-block button {
   border: none;
-  width: 180px;
-  min-height: 40px;
+  width: 350px;
+  border-radius: 5px;
+  min-height: 48px;
   padding: 15px 10px 15px 10px;
   margin: 10px 20px 10px 20px;
   color: #fff;
@@ -152,27 +154,43 @@ select {
   cursor: pointer;
 }
 
-.form-price {
+.form-price-ukr {
   display: none;
 }
 
-.form-support-system {
+.form-price-eur {
   display: none;
 }
 
-.form-software-about {
+.form-support-system-ukr {
   display: none;
 }
 
-.total-amount {
+.form-support-system-eur {
+  display: none;
+}
+
+.form-software-about-ukr {
+  display: none;
+}
+
+.form-software-about-eur {
+  display: none;
+}
+
+.total-amount-ukr {
+  display: none;
+}
+
+.total-amount-eur {
   display: none;
 }
 
 .europe-content {
-  border: 2px solid red;
+  display: none;
 }
 
 .ukraine-content {
-  border: 2px solid green;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

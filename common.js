@@ -1,53 +1,114 @@
 $(function() {
 
+// Открываем блок по клику на кнопку	
+
+$('#button-click').click(function () {
+	$('#content-block').slideToggle(500);
+});
+$(window).resize(function () {
+	if ($(window).width() > 500) {
+		$('#content-block').removeAttr('style');
+	}
+});
+
+// Украина	
+
 // block one 
 
-$('.input-server').click(function () {
-	$('.form-price').slideDown();
+$('.input-server-ukr').click(function () {
+	$('.form-price-ukr').slideDown();
 });
 
 // block two
 
-$('.price').click(function () {
-	$('.form-support-system').slideDown();
+$('.price-ukr').click(function () {
+	$('.form-support-system-ukr').slideDown();
 });
 
 // block three
 
-$('.suport-system').click(function () {
-	$('.form-software-about').slideDown();
+$('.suport-system-ukr').click(function () {
+	$('.form-software-about-ukr').slideDown();
 });
 
 // block four
 
-$('.software-about').click(function () {
-	$('.total-amount').slideDown();
+$('.software-about-ukr').click(function () {
+	$('.total-amount-ukr').slideDown();
 });
 
 // выделяем только один чекбокс
 
-$(".group input").on("click", function() {
+$(".group-ukr input").on("click", function() {
 
-	if($(".group input:checked").length >= 1) { // Не больше 2-х checkbox
+	if($(".group-ukr input:checked").length >= 1) { // Не больше 2-х checkbox
 		
-		$(".group input:not(:checked)").attr("disabled", true);
+		$(".group-ukr input:not(:checked)").attr("disabled", true);
 	
 	} else {
 		
-		$(".group input:disabled").attr("disabled", false);
+		$(".group-ukr input:disabled").attr("disabled", false);
 	
 	}
 
 });
 
-// показывать скрывать разные сервера
+// Украина
 
-// $(function() {
-// 	$('#servers-select').change(function(){
-// 		$('.servers-wrapper').hide();
-// 		$('#' + $(this).val()).show();
-// 	});
-// });
+
+// Европа
+
+// block one 
+
+$('.input-server-eur').click(function () {
+	$('.form-price-eur').slideDown();
+});
+
+// block two
+
+$('.price-eur').click(function () {
+	$('.form-support-system-eur').slideDown();
+});
+
+// block three
+
+$('.suport-system-eur').click(function () {
+	$('.form-software-about-eur').slideDown();
+});
+
+// block four
+
+$('.software-about-eur').click(function () {
+	$('.total-amount-eur').slideDown();
+});
+
+// выделяем только один чекбокс
+
+$(".group-eur input").on("click", function() {
+
+	if($(".group-eur input:checked").length >= 1) { // Не больше 2-х checkbox
+		
+		$(".group-eur input:not(:checked)").attr("disabled", true);
+	
+	} else {
+		
+		$(".group-eur input:disabled").attr("disabled", false);
+	
+	}
+
+});
+
+// Европа
+
+
+// выпадающий список показывать скрывать разные сервера
+
+$(function() {
+	$('#servers-select').change(function(){
+		$('.servers-wrapper').hide();
+		$('#' + $(this).val()).show();
+	});
+});
 
 
 });
