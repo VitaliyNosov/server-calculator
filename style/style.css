@@ -3,6 +3,39 @@ body {
   margin: 0px;
 }
 
+.button-block-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-block-header button {
+  border: none;
+  width: 350px;
+  border-radius: 5px;
+  min-height: 48px;
+  padding: 15px 10px 15px 10px;
+  margin: 10px 20px 10px 20px;
+  color: #fff;
+  background-color: #169FE6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1cbaed), to(#0e7bdd));
+  background-image: linear-gradient(to bottom, #1cbaed, #0e7bdd);
+  border: 1px solid #fff;
+}
+
+.button-block-header button:hover {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#DFDFDF));
+  background-image: linear-gradient(to bottom, #fff, #DFDFDF);
+  color: #169FE6;
+  border: 1px solid #169FE6;
+  cursor: pointer;
+}
+
 .calculator-wrapper {
   min-height: 110px;
 }
@@ -10,6 +43,7 @@ body {
 .form-wrapper {
   max-width: 800px;
   margin: 0 auto;
+  background-color: #fff;
   display: none;
 }
 
@@ -24,11 +58,79 @@ body {
   background-image: linear-gradient(to bottom, #1cbaed, #0e7bdd);
 }
 
+.server-header-block {
+  padding: 1%;
+}
+
+.servers-wrapper {
+  margin: 2%;
+  background-color: #F3FBFE;
+}
+
+.form-price-ukr {
+  background-color: #F3FBFE;
+  padding: 1%;
+}
+
+.form-support-system-ukr {
+  background-color: #F3FBFE;
+  padding: 1%;
+}
+
+.form-software-about-ukr {
+  background-color: #F3FBFE;
+  padding: 1%;
+}
+
+.group-ukr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-price-eur {
+  background-color: #F3FBFE;
+  padding: 1%;
+}
+
+.form-support-system-eur {
+  background-color: #F3FBFE;
+  padding: 1%;
+}
+
+.form-software-about-eur {
+  background-color: #F3FBFE;
+  padding: 1%;
+}
+
+.group-eur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.total-amount-block {
+  background-color: #F3FBFE;
+  padding: 1px;
+}
+
+.total-amount-eur {
+  padding: 1%;
+}
+
 .section-form-body {
   min-height: 300px;
   padding: 20px;
   margin: 20px;
-  background-color: #ffff;
+  background-color: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -55,6 +157,7 @@ select {
 
 .country {
   min-height: 30px;
+  margin-bottom: 3.5%;
   padding: 0px 5px 0px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,11 +177,11 @@ select {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1cbaed), to(#0e7bdd));
   background-image: linear-gradient(to bottom, #1cbaed, #0e7bdd);
   color: #fff;
-  margin-top: 30px;
 }
 
 .tabs-wrapper {
   max-width: 100%;
+  margin: 20px;
   overflow: hidden;
 }
 
@@ -94,17 +197,15 @@ select {
 }
 
 .tabs-wrapper article {
-  width: 100%;
-  padding: 20px;
-  background-color: #fff;
+  max-width: 100%;
+  padding: 1%;
+  background-color: #F3FBFE;
   display: none;
   min-height: 50px;
 }
 
 .total-amount-block {
-  width: 100%;
   height: 40px;
-  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,13 +216,13 @@ select {
       -ms-flex-align: center;
           align-items: center;
   font-size: 22px;
-  color: #169FE6;
+  color: #000;
 }
 
 .button-block {
   width: 100%;
   min-height: 50px;
-  margin-top: 20px;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,6 +234,7 @@ select {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #F3FBFE;
 }
 
 .button-block button {
@@ -170,6 +272,10 @@ select {
   display: none;
 }
 
+.form-price-users {
+  display: none;
+}
+
 .form-support-system-eur {
   display: none;
 }
@@ -183,6 +289,7 @@ select {
 }
 
 .total-amount-ukr {
+  padding: 1%;
   display: none;
 }
 
