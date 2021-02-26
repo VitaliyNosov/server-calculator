@@ -12,7 +12,7 @@
 <div class="calculator-wrapper">
 
     <div class="button-block-header">
-        <button id="button-click">Калькулятор серверов</button>
+        <button id="button-click">Калькулятор сервера</button>
     </div>
 
     <div id="content-block" class="form-wrapper">
@@ -23,7 +23,6 @@
                     <h1><strong>Расчитать стоимость</strong></h1>
                 </header>
 
-
             <div class="form-body form-body-one">
                   <div class="select-body">
                       <select name="" id="servers-select">
@@ -33,7 +32,6 @@
                       </select>
                   </div>         
             </div>
-
 
         <!-- Украина -->
 
@@ -55,7 +53,9 @@
         </div>
 
         <div class="tabs-wrapper">
-          
+
+            <input type="radio" name="tab" id="tab-1" checked>
+            <label for="tab-1">Сервер: <strong>KVM-50</strong></label></br>                     
             <input type="radio" name="tab" id="tab-1" checked>
             <label for="tab-1">Сервер: <strong>KVM-50</strong></label></br>
             <input type="radio" name="tab" id="tab-2">
@@ -67,32 +67,32 @@
     
         <div class="content">
             <article class="tab-1">
-                <p>RAM GB (оперативная память)<strong> :2</strong></p>
-                <p>Processor: Intel Xeon (2.3 GHz) (процессор, количество ядер)<strong> :2</strong></p>
-                <p>Storage: GB SSD (объем диска)<strong> :50</strong></p>
-                <p>Max Users ( максимальное количество пользователей)<strong> :3</strong></p>
-                <label for=""><strong>Узнать цены</strong><input class="input-server-ukr" type="checkbox"></label>
+                <p><strong>RAM GB</strong> (оперативная память)<strong> :2</strong></p>
+                <p><strong>Processor: Intel Xeon (2.3 GHz)</strong> (процессор, количество ядер)<strong> :2</strong></p>
+                <p><strong>Storage: GB SSD</strong> (объем диска)<strong> :50</strong></p>
+                <p><strong>Max Users</strong> ( максимальное количество пользователей)<strong> :3</strong></p>
+                <label for=""><strong>Узнать цены</strong><input class="input-server-ukr" type="radio"></label>
             </article>
             <article class="tab-2">
-                <p>RAM GB (оперативная память)<strong> :4</strong></p>
-                <p>Processor: Intel Xeon (2.3 GHz) (процессор, количество ядер)<strong> :3</strong></p>
-                <p>Storage: GB SSD (объем диска)<strong> :75</strong></p>
-                <p>Max Users ( максимальное количество пользователей)<strong> :5</strong></p>
-                <label for=""><strong>Узнать цены</strong><input class="input-server-ukr" type="checkbox"></label>
+                <p><strong>RAM GB</strong> (оперативная память)<strong> :4</strong></p>
+                <p><strong>Processor: Intel Xeon (2.3 GHz)</strong> (процессор, количество ядер)<strong> :3</strong></p>
+                <p><strong>Storage: GB SSD</strong> (объем диска)<strong> :75</strong></p>
+                <p><strong>Max Users</strong> ( максимальное количество пользователей)<strong> :5</strong></p>
+                <label for=""><strong>Узнать цены</strong><input class="input-server-ukr" type="radio"></label>
             </article>
             <article class="tab-3">
-                <p>RAM GB (оперативная память)<strong> :6</strong></p>
-                <p>Processor: Intel Xeon (2.3 GHz) (процессор, количество ядер)<strong> :4</strong></p>
-                <p>Storage: GB SSD (объем диска)<strong> :150</strong></p>
-                <p>Max Users ( максимальное количество пользователей)<strong> :10</strong></p>
-                <label for=""><strong>Узнать цены</strong><input class="input-server-ukr" type="checkbox"></label>
+                <p><strong>RAM GB</strong> (оперативная память)<strong> :6</strong></p>
+                <p><strong>Processor: Intel Xeon (2.3 GHz)</strong> (процессор, количество ядер)<strong> :4</strong></p>
+                <p><strong>Storage: GB SSD</strong> (объем диска)<strong> :150</strong></p>
+                <p><strong>Max Users</strong> ( максимальное количество пользователей)<strong> :10</strong></p>
+                <label for=""><strong>Узнать цены</strong><input class="input-server-ukr" type="radio"></label>
             </article>
             <article class="tab-4">
-                <p>RAM GB (оперативная память)<strong> :8</strong></p>
-                <p>Processor: Intel Xeon (2.3 GHz) (процессор, количество ядер)<strong> :4</strong></p>
-                <p>Storage: GB SSD (объем диска)<strong> :300</strong></p>
-                <p>Max Users ( максимальное количество пользователей)<strong> :20</strong></p>
-                <label for=""><strong>Узнать цены</strong><input class="input-server-ukr" type="checkbox"></label>          
+                <p><strong>RAM GB</strong> (оперативная память)<strong> :8</strong></p>
+                <p><strong>Processor: Intel Xeon (2.3 GHz)</strong> (процессор, количество ядер)<strong> :4</strong></p>
+                <p><strong>Storage: GB SSD</strong> (объем диска)<strong> :300</strong></p>
+                <p><strong>Max Users</strong> ( максимальное количество пользователей)<strong> :20</strong></p>
+                <label for=""><strong>Узнать цены</strong><input class="input-server-ukr" type="radio"></label>          
             </article>
         </div>
         <br class="clear:both" />
@@ -110,10 +110,23 @@
                 <p>Цены:</p>
             </div>
             <hr>
-            <label><input  class="price-ukr" type="radio" name="price" value="b2-7">KVM-50: <strong>18 euro</strong></label>
-            <label><input  class="price-ukr" type="radio" name="price" value="b2-15">KVM-75: <strong>28.8 euro</strong></label>
-            <label><input  class="price-ukr" type="radio" name="price" value="b2-30">KVM-150: <strong>44.4 euro</strong></label>
-            <label><input  class="price-ukr" type="radio" name="price" value="b2-60">KVM-300: <strong>75.6 euro</strong></label>
+
+            <div class="radio-block-wrapper">
+                <div class="radio-block">
+                    <label><input  class="price-ukr" type="radio" name="price" value="b2-7">KVM-50: <strong>18 euro</strong></label>
+                </div>
+                <div class="radio-block">
+                    <label><input  class="price-ukr" type="radio" name="price" value="b2-15">KVM-75: <strong>28.8 euro</strong></label>
+                </div>
+                      
+                <div class="radio-block">
+                    <label><input  class="price-ukr" type="radio" name="price" value="b2-30">KVM-150: <strong>44.4 euro</strong></label>
+                </div>
+                <div class="radio-block">
+                    <label><input  class="price-ukr" type="radio" name="price" value="b2-60">KVM-300: <strong>75.6 euro</strong></label>
+                </div>  
+            </div>
+
         </div>
 
         <!-- Колличество пользователей -->
@@ -131,7 +144,6 @@
 
         <!-- Операционная система -->
 
-
         <div class="form-support-system-ukr">
             <div class="country">
                 <p>Выбрать операционнуя систему:</p>
@@ -145,23 +157,14 @@
 
         <div class="form-software-about-ukr">
             <div class="country">
-                <p>Дополнительное программное обесппечение:</p>
+                <p>Аренда програмного обеспечения:</p>
             </div>
             <hr>
             <div class="group-ukr">
                 <label for="#"><input class="software-about-ukr" type="checkbox" name="server" value="1">
-                    Linux</label>               
+                    <strong>BAS</strong></label>               
                 <label for="#"><input class="software-about-ukr" type="checkbox" name="server" value="2">
-                    Linux</label>                
-                <label for="#"><input class="software-about-ukr" type="checkbox" name="server" value="3">
-                    Linux</label>               
-                <label for="#"><input class="software-about-ukr" type="checkbox" name="server" value="4">
-                    Linux</label>              
-                <label for="#"><input class="software-about-ukr" type="checkbox" name="server" value="5">
-                    Linux</label>                
-                <label for="#"><input class="software-about-ukr" type="checkbox" name="server" value="6">
-                    Linux</label>
-                
+                    <strong>1C</strong></label>                              
             </div>
         </div>
 
@@ -173,10 +176,35 @@
                 <p>Сумма: <strong>235346</strong></p>
             </div>
 
-            <div class="button-block">
-                <button type="submit">Отправить мне на e:mail</button>
-                <button type="submit">Отправить заказ</button>
-            </div>  
+            <hr>
+
+            <div class="order-header">
+                <h3>Отправить мне на Email</h3>
+            </div>
+
+            <div id="email-one" class="block-form-order">
+                <div class="form-body-order">
+                    <input type="text" placeholder="ваша почта: ">
+                    <div class="button-order">
+                        <button type="submit">Отправить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-header">
+                <h3>Отправить заказ</h3>
+            </div>
+
+            <div class="block-form-order">
+                <div class="form-body-order">
+                    <input type="text" placeholder="ваша почта: ">
+                    <input type="text" placeholder="ваш телефон: ">
+                    <div class="button-order">
+                        <button type="submit">Отправить</button>
+                    </div>
+                </div>
+            </div> 
+
         </div>
 
         </div>
@@ -219,32 +247,32 @@
         
             <div class="content">
                 <article class="tab-1">
-                    <p>RAM GB (оперативная память)<strong> :7</strong></p>
-                    <p>Processor: vCores (2.3 GHz) (процессор, количество ядер)<strong> :2</strong></p>
-                    <p>Storage: GB SSD (объем диска)<strong> :50</strong></p>
-                    <p>Max Users ( максимальное количество пользователей)<strong> :5</strong></p>
-                    <label for=""><strong>Узнать цены</strong><input class="input-server-eur" type="checkbox"></label>
+                    <p><strong>RAM GB</strong> (оперативная память)<strong> :7</strong></p>
+                    <p><strong>Processor: vCores (2.3 GHz)</strong> (процессор, количество ядер)<strong> :2</strong></p>
+                    <p><strong>Storage: GB SSD</strong> (объем диска)<strong> :50</strong></p>
+                    <p><strong>Max Users</strong> ( максимальное количество пользователей)<strong> :5</strong></p>
+                    <label for=""><strong>Узнать цены</strong><input class="input-server-eur" type="radio"></label>
                 </article>
                 <article class="tab-2">
-                    <p>RAM GB (оперативная память)<strong> :15</strong></p>
-                    <p>Processor: vCores (2.3 GHz) (процессор, количество ядер)<strong> :4</strong></p>
-                    <p>Storage: GB SSD (объем диска)<strong> :100</strong></p>
-                    <p>Max Users ( максимальное количество пользователей)<strong> :15</strong></p>
-                    <label for=""><strong>Узнать цены</strong><input class="input-server-eur" type="checkbox"></label>
+                    <p><strong>RAM GB</strong> (оперативная память)<strong> :15</strong></p>
+                    <p><strong>Processor: vCores (2.3 GHz)</strong> (процессор, количество ядер)<strong> :4</strong></p>
+                    <p><strong>Storage: GB SSD</strong> (объем диска)<strong> :100</strong></p>
+                    <p><strong>Max Users</strong> ( максимальное количество пользователей)<strong> :15</strong></p>
+                    <label for=""><strong>Узнать цены</strong><input class="input-server-eur" type="radio"></label>
                 </article>
                 <article class="tab-3">
-                    <p>RAM GB (оперативная память)<strong> :30</strong></p>
-                    <p>Processor: vCores (2.3 GHz) (процессор, количество ядер)<strong> :8</strong></p>
-                    <p>Storage: GB SSD (объем диска)<strong> :200</strong></p>
-                    <p>Max Users ( максимальное количество пользователей)<strong> :25</strong></p>
-                    <label for=""><strong>Узнать цены</strong><input class="input-server-eur" type="checkbox"></label>
+                    <p><strong>RAM GB</strong> (оперативная память)<strong> :30</strong></p>
+                    <p><strong>Processor: vCores (2.3 GHz)</strong> (процессор, количество ядер)<strong> :8</strong></p>
+                    <p><strong>Storage: GB SSD</strong> (объем диска)<strong> :200</strong></p>
+                    <p><strong>Max Users</strong> ( максимальное количество пользователей)<strong> :25</strong></p>
+                    <label for=""><strong>Узнать цены</strong><input class="input-server-eur" type="radio"></label>
                 </article>
                 <article class="tab-4">
-                    <p>RAM GB (оперативная память)<strong> :60</strong></p>
-                    <p>Processor: vCores (2.3 GHz) (процессор, количество ядер)<strong> :8</strong></p>
-                    <p>Storage: GB SSD (объем диска)<strong> :400</strong></p>
-                    <p>Max Users ( максимальное количество пользователей)<strong> :50</strong></p>
-                    <label for=""><strong>Узнать цены</strong><input class="input-server-eur" type="checkbox"></label>          
+                    <p><strong>RAM GB</strong> (оперативная память)<strong> :60</strong></p>
+                    <p><strong>Processor: vCores (2.3 GHz)</strong> (процессор, количество ядер)<strong> :8</strong></p>
+                    <p><strong>Storage: GB SSD</strong> (объем диска)<strong> :400</strong></p>
+                    <p><strong>Max Users</strong> ( максимальное количество пользователей)<strong> :50</strong></p>
+                    <label for=""><strong>Узнать цены</strong><input class="input-server-eur" type="radio"></label>          
                 </article>
             </div>
             <br class="clear:both" />
@@ -260,10 +288,22 @@
                     <p>Цены:</p>
                 </div>
                 <hr>
-                <label><input class="price-eur" type="radio" name="price" value="b2-7">B2-7: <strong>26.4 euro</strong></label>
-                <label><input class="price-eur" type="radio" name="price" value="b2-15">B2-15: <strong>50.4 euro</strong></label>
-                <label><input class="price-eur" type="radio" name="price" value="b2-30">B2-30: <strong>102 euro</strong></label>
-                <label><input class="price-eur" type="radio" name="price" value="b2-60">B2-60: <strong>198 euro</strong></label>
+
+                <div class="radio-block-wrapper">
+                    <div class="radio">
+                        <label><input class="price-eur" type="radio" name="price" value="b2-7">B2-7: <strong>26.4 euro</strong></label>
+                    </div>
+                    <div class="radio">
+                        <label><input class="price-eur" type="radio" name="price" value="b2-15">B2-15: <strong>50.4 euro</strong></label>
+                    </div>
+                    <div class="radio">
+                        <label><input class="price-eur" type="radio" name="price" value="b2-30">B2-30: <strong>102 euro</strong></label>
+                    </div>
+                    <div class="radio">
+                        <label><input class="price-eur" type="radio" name="price" value="b2-60">B2-60: <strong>198 euro</strong></label>
+                    </div>
+                </div>              
+                           
             </div>
     
             <div class="form-support-system-eur">
@@ -279,22 +319,14 @@
     
             <div class="form-software-about-eur">
                 <div class="country">
-                    <p>Дополнительное программное обесппечение:</p>
+                    <p>Аренда програмного обеспечения:</p>
                 </div>
                 <hr>
                 <div class="group-eur">
-                    <label for="#"><input class="software-about-eur" type="checkbox" name="server" value="1">
-                        Linux</label>                  
-                    <label for="#"><input class="software-about-eur" type="checkbox" name="server" value="2">
-                        Linux</label>                    
-                    <label for="#"><input class="software-about-eur" type="checkbox" name="server" value="3">
-                        Linux</label>                    
-                    <label for="#"><input class="software-about-eur" type="checkbox" name="server" value="4">
-                        Linux</label>                   
-                    <label for="#"><input class="software-about-eur" type="checkbox" name="server" value="5">
-                        Linux</label>                    
-                    <label for="#"><input class="software-about-eur" type="checkbox" name="server" value="6">
-                        Linux</label>                    
+                    <label for="#"><input class="software-about-ukr" type="checkbox" name="server" value="1">
+                        <strong>BAS</strong></label>               
+                    <label for="#"><input class="software-about-ukr" type="checkbox" name="server" value="2">
+                        <strong>1C</strong></label>                    
                 </div>
             </div>
     
@@ -306,10 +338,36 @@
                     <p>Сумма: <strong>235346</strong></p>
                 </div>
     
-                <div class="button-block">
-                    <button type="submit">Отправить мне на e:mail</button>
-                    <button type="submit">Отправить заказ</button>
-                </div>  
+                <hr>
+
+                <div class="order-header">
+                    <h3>Отправить мне на Email</h3>
+                </div>
+
+                <div id="email-one" class="block-form-order">
+                    <div class="form-body-order">
+                        <input type="text" placeholder="ваша почта: ">
+                    <div class="button-order">
+                        <button type="submit">Отправить</button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="order-header">
+                    <h3>Отправить заказ</h3>
+                </div>
+
+                <div class="block-form-order">
+                    <div class="form-body-order">
+                        <input type="text" placeholder="ваша почта: ">
+                        <input type="text" placeholder="ваш телефон: ">
+                    <div class="button-order">
+                        <button type="submit">Отправить</button>
+                    </div>
+                    </div>
+
+                </div> 
+
             </div>
     
             </div>

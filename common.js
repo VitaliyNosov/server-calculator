@@ -25,11 +25,6 @@ $('.price-ukr').click(function () {
 	$('.form-support-system-ukr').slideDown();
 });
 
-// block two .1
-
-// $('.price-users').click(function () {
-// 	$('.total-amount-ukr').slideDown();
-// });
 
 // block three
 
@@ -42,7 +37,6 @@ $('.suport-system-ukr').click(function () {
 $('.software-about-ukr').click(function () {
 	$('.total-amount-ukr').slideDown();
 });
-
 
 
 // выделяем только один чекбокс
